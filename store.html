@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minimalist Clothing</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <style>
+        /* Reset some default browser styles */
+        body, h1, h2, h3, p, ul, li {
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Global styles */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: white; /* Set the background color to white */
+            color: #333; /* Set the text color to a dark gray */
+            line-height: 1.6;
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: white;
+            padding: 20px;
+        }
+
+        .background-section {
+            /*background-image: url("week1images/background1.webp"); /* Replace with your background image URL */
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            text-align: center;
+            color: white; /* Text color on the background */
+        }
+
+        .background-caption {
+            font-size: 24px;
+        }
+
+        .brand {
+            font-size: 24px;
+            font-weight: bold;
+            flex-grow: 1; /* Grow to occupy available space */
+            text-align: center; /* Center the title */
+        }
+
+        .menu-icon,
+        .shopping-cart {
+            font-size: 24px;
+            color: black; /* Change icon color to black */
+            text-decoration: none;
+        }
+
+        .menu-icon {
+            margin-right: 20px;
+        }
+
+        .shopping-cart {
+            margin-left: auto; /* Move the shopping cart to the right */
+        }
+
+        .featured {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 100px 0;
+        }
+
+        .featured img {
+            max-width: 50%;
+        }
+
+        .caption {
+            padding: 20px;
+        }
+
+        .cta-button {
+            display: inline-block;
+            background-color: #333;
+            color: #fff;
+            padding: 10px 20px;
+            text-decoration: none;
+        }
+
+        .products {
+            background-color: white;
+            padding: 50px 0;
+            text-align: center;
+        }
+
+        .products h2 {
+            font-size: 28px;
+            margin-bottom: 30px;
+        }
+
+        .product-card {
+            display: inline-block;
+            width: 45%; /* Set the width to display two products side by side */
+            margin: 0 2.5%; /* Add a small margin between products */
+            text-align: center; /* Center the content within the card */
+        }
+
+
+        .product-card img {
+            max-width: 100%;
+        }
+
+        .price {
+            font-weight: bold;
+            display: block;
+            margin-top: 10px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+    
+    <header>
+        <a href="#" class="menu-icon"><i class="fas fa-bars"></i></a>
+        <h1 class="brand">Minimalist Clothing</h1>
+        <a href="#" class="shopping-cart"><i class="fas fa-shopping-cart"></i></a>
+    </header>
+    
+    <section class="background-section">
+        <!-- Remove the <img> tag if you want the background image to take precedence -->
+        <section class="background-section">
+            <img src="images/background1.webp" alt="background">
+        </section>
+    </section>
+
+    <section class="featured">
+        <div class="caption">
+            <h2>Essential Collection</h2>
+            <p>Discover timeless pieces that define simplicity and style.</p>
+            <a href="#" class="cta-button">Shop Now</a>
+        </div>
+    </section>
+
+    <section class="products">
+        <h2>Latest Arrivals</h2>
+        <div class="product-card">
+            <img src="images/p1.webp" alt="Product 1">
+            <h3>Boyfriend Tee</h3>
+            <span class="price">$38</span>
+        </div>
+        <div class="product-card">
+            <img src="images/p2.webp" alt="Product 2">
+            <h3>Cotton Tee in white</h3>
+            <span class="price">$32</span>
+        </div>
+        <!-- Add more products here -->
+        <div class="product-card">
+            <img src="images/p3.webp" alt="Product 3">
+            <h3>Cotton Tee in Beige</h3>
+            <span class="price">$32</span>
+        </div>
+        <div class="product-card">
+            <img src="images/p4.webp" alt="Product 4">
+            <h3>Cotton Tee in Black</h3>
+            <span class="price">$32</span>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2023 Minimalist Clothing. All rights reserved.</p>
+    </footer>
+</body>
+</html>

@@ -1,1 +1,44 @@
-<h1> Hello! I'm Perline Ong </h1>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Profile</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+        }
+
+        .profile-photo-container {
+            width: 200px;
+            height: 200px;
+            margin: 20px auto;
+            border-radius: 50%;
+            overflow: hidden; /* Hide the parts of the image outside the circle */
+        }
+
+        .profile-photo {
+            width: 100%;
+            height: 100%;
+            object-fit: cover; /* Maintain aspect ratio and cover the entire container */
+        }
+
+        .bio {
+            font-size: 18px;
+            line-height: 1.5;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+    </style>
+</head>
+<body>
+    <img src="images/profilephoto.jpg" alt="Profile Photo" class="profile-photo-container">
+    <div class="bio">
+        <h1>About Me</h1>
+        <p>Hello, I'm Perline. I used to play volleyball and i enjoy watching shows during my free time.</p>
+    </div>
+</body>
+</html>

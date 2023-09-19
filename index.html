@@ -173,12 +173,51 @@
                 <iframe src="https://www.youtube.com/embed/nVe8ZiSyiQQ?autoplay=1&mute=1" frameborder="0" allowfullscreen></iframe>
             </div>
         </div>
+
+        <!-- Button to generate a random quote -->
+        <div class="card mb-4">
+            <div class="card-body">
+                <h5 class="card-title">Need some motivation?</h5>
+                <p id="quote"></p>
+                <button id="generateQuoteButton" class="btn btn-primary">Generate Random Quote</button>
+            </div>
+        </div>
     </div>
     
   
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+
+    <script>
+        // Array of random quotes
+        const quotes = [
+            "The only way to do great work is to love what you do. - Steve Jobs",
+            "In the middle of every difficulty lies opportunity. - Albert Einstein",
+            "Don't count the days; make the days count. - Muhammad Ali",
+            "Success is not final, failure is not fatal: It is the courage to continue that counts. - Winston Churchill",
+            "The future belongs to those who believe in the beauty of their dreams. - Eleanor Roosevelt"
+        ];
+
+        // Function to generate a random quote
+        function generateRandomQuote() {
+            const randomIndex = Math.floor(Math.random() * quotes.length);
+            return quotes[randomIndex];
+        }
+
+        // Function to handle the "Generate Random Quote" button click event
+        function handleGenerateQuoteButtonClick() {
+            const quoteElement = document.getElementById('quote');
+            const randomQuote = generateRandomQuote();
+            quoteElement.textContent = randomQuote;
+        }
+
+        // Add a click event listener to the "Generate Random Quote" button
+        const generateQuoteButton = document.getElementById('generateQuoteButton');
+        generateQuoteButton.addEventListener('click', handleGenerateQuoteButtonClick);
+    </script>
+    
+
 </body>
 </html>
 

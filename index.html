@@ -182,6 +182,26 @@
                 <button id="generateQuoteButton" class="btn btn-primary">Generate Random Quote</button>
             </div>
         </div>
+
+        <div class="card mb-4">
+            <div class="card-header">
+                Current Singapore's Weather Information
+            </div>
+            <ul class="list-group list-group-flush">
+                <li class="list-group-item">
+                    Weather Main:
+                    <span id="today-pick-city-weather-main" style="font-weight: bold;">Clouds</span>
+                </li>
+                <li class="list-group-item">
+                    Temperature:
+                    <span id="today-pick-city-temperature" style="font-weight: bold;">27.5</span>
+                </li>
+                <li class="list-group-item">
+                    Humidity:
+                    <span id="today-pick-city-humidity" style="font-weight: bold;">70</span>
+                </li>
+            </ul>
+        </div>
     </div>
     
   
@@ -216,6 +236,8 @@
         const generateQuoteButton = document.getElementById('generateQuoteButton');
         generateQuoteButton.addEventListener('click', handleGenerateQuoteButtonClick);
     </script>
+
+    
     
 
 </body>
